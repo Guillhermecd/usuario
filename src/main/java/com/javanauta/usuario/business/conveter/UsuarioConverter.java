@@ -32,7 +32,6 @@ public class UsuarioConverter {
 
     public Endereco paraEndereco(EnderecoDTO enderecoDTO) {
         return Endereco.builder()
-                .id(enderecoDTO.getId())
                 .rua(enderecoDTO.getRua())
                 .numero(enderecoDTO.getNumero())
                 .cep(enderecoDTO.getCep())
@@ -48,7 +47,6 @@ public class UsuarioConverter {
 
     public Telefone paraTelefone(TelefoneDTO telefoneDTO) {
         return Telefone.builder()
-
                 .numero(telefoneDTO.getNumero())
                 .ddd(telefoneDTO.getDdd())
                 .build();
